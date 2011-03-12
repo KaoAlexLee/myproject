@@ -1,3 +1,10 @@
 <h1>Hola</h1>
+<h2><%= I18n.t( :something )%></h2>
 
 <%= link_to "SAY", :controller => "welcome" , :action => "say" %>
+
+<%= link_to "en", :controller => controller.controller_name, 
+                 :action => controller.action_name, :locale => "en" %>
+				 
+<%= link_to "zh-TW", :controller => controller.controller_name, 
+                 :action => controller.action_name, :locale => "zh-TW" %>

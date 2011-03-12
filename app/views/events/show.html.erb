@@ -3,4 +3,8 @@
 <%= @event.description %>
 
 <p>
-<%= link_to "back to index", :controller => "events", :action => "index" %>
+
+#<%= link_to "back to index", :controller => "events", :action => "index" %>
+<%= link_to "back to index", event_path(event) %>
+
+
