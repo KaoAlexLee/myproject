@@ -1,0 +1,16 @@
+<ul>
+   <% @events.each do |event| %>
+      <li>
+		<%#=  link_to event.name,  :controller => "events" , 
+		     :action => "show", :id => event %>                
+		<%=  link_to event.name, event_path(event) %>
+
+		<%=  link_to "Edit", edit_event_path(event) %>
+      </li>
+	  
+	  <%= link_to "DELETE", event_path(event), :method => :delete %>
+    <% end %>
+</ul>
+
+<p><%= paginate @events %></p>
+<%= link_to "New event", new_event_path%>

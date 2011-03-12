@@ -1,4 +1,6 @@
 Myproject::Application.routes.draw do
+  resources :events
+  
   resources :people
 
   # The priority is based upon order of creation:

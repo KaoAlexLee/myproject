@@ -7,6 +7,9 @@ gem 'rails', '3.0.4'
 
 gem 'sqlite3'
 
+# 2011 / 03 / 12 add next page link 
+gem "kaminari"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
