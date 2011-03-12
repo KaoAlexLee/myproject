@@ -4,4 +4,3 @@ class WelcomeController < ApplicationController
        render :text => "Hello!!!!"
     end
 end
--
